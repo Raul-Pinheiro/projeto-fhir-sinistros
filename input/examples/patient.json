@@ -1,0 +1,30 @@
+{
+    "resourceType": "Patient",
+    "id": "patient-1",
+    "meta": {
+        "profile": [
+            "http://somewhere.org/fhir/uv/myig/StructureDefinition/patient"
+        ]
+    },    
+    "identifier": [
+      {
+        "use": "official",
+        "system": "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cpf",
+        "value": "12345678910"
+      }
+    ],
+    "name": [
+        {
+            "text": "Fulano Beltrano Sicrano"
+        }        
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://somewhere.org/fhir/uv/myig/CodeSystem/estado-civil",
+                "code": "solteiro",
+                "display": "Solteiro"
+            }
+        ]
+    }
+  }

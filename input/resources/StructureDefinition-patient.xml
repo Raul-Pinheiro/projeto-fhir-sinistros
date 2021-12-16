@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="patient"/>
+  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/patient"/>
+  <name value="Patient"/>
+  <title value="Patient"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-10-21T21:31:00-03:00"/>
+  <kind value="complex-type"/>
+  <abstract value="true"/>
+  <type value="Patient"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+    <element id="Patient.identifier:CPFRNDS">
+      <path value="Patient.identifier"/>
+      <sliceName value="CPFRNDS"/>
+      <min value="1"/>
+      <max value="1"/>      
+    </element>
+    <element id="Patient.identifier:CPFRNDS.use">
+      <path value="Patient.identifier.use"/>      
+      <min value="1"/>
+      <fixedCode value="official"/>
+    </element>
+    <element id="Patient.identifier:CPFRNDS.system">
+      <path value="Patient.identifier.system"/>      
+      <min value="1"/>
+      <fixedUri value="http://rnds.saude.gov.br/fhir/r4/NamingSystem/cpf"/>
+    </element>
+    <element id="Patient.identifier:CPFRNDS.value">
+      <path value="Patient.identifier.value"/>
+      <min value="1"/>
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name"/>
+      <min value="1"/>
+    </element>
+    <element id="Patient.name.text">
+      <path value="Patient.name.text"/>
+      <min value="1"/>
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus"/>
+      <min value="1"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://somewhere.org/fhir/uv/myig/ValueSet/patient-maritalstatus"/>
+      </binding>
+    </element>
+    <element id="Patient.maritalStatus.coding">
+      <path value="Patient.maritalStatus.coding"/>
+      <min value="1"/>
+    </element>
+    <element id="Patient.maritalStatus.coding.system">
+      <path value="Patient.maritalStatus.coding.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Patient.maritalStatus.coding.code">
+      <path value="Patient.maritalStatus.coding.code"/>
+      <min value="1"/>
+    </element>
+    <element id="Patient.maritalStatus.coding.display">
+      <path value="Patient.maritalStatus.coding.display"/>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition> 

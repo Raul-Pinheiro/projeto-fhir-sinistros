@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-maritalstatus"/> 
+  <meta> 
+    <!--     shareable value sets are fully described, and can be put in the HL7 registry     -->
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/> 
+  </meta>   
+  <url value="http://somewhere.org/fhir/uv/myig/ValueSet/patient-maritalstatus"/>   
+  <version value="1"/>   
+  <name value="Patient-maritalstatus"/> 
+  <status value="draft"/> 
+  <experimental value="true"/> 
+  <date value="2021-11-04"/> 
+  <publisher value="HL7 Brasil"/> 
+  <contact> 
+    <name value="Neusa"/> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="http://hl7.com.br"/> 
+    </telecom> 
+  </contact> 
+  <description value="Um domínio de valores para validação de estado civil no território brasileiro."/>       
+  <compose>   
+    <include> 
+      <system value="http://somewhere.org/fhir/uv/myig/CodeSystem/estado-civil"/> 
+      <version value="1"/> 
+    </include> 
+  </compose> 
+</ValueSet> 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="estado-civil"/> 
+  <meta> 
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/> 
+  </meta>   
+  <url value="http://somewhere.org/fhir/uv/myig/CodeSystem/estado-civil"/>
+  <version value="1"/> 
+  <name value="Estado Civil Curso RNDS"/> 
+  <title value="Estado Civil Curso RNDS"/> 
+  <status value="draft"/> 
+  <experimental value="true"/> 
+  <date value="2021-11-04"/> 
+  <publisher value="HL7 Brasil"/> 
+  <contact> 
+    <name value="Neusa"/> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="http://hl7.com.br"/> 
+    </telecom> 
+  </contact> 
+  <description value="Uma terminologia para classificação de estado civil no Brasil."/> 
+  <caseSensitive value="true"/> 
+  <content value="complete"/>
+  <concept> 
+    <code value="solteiro"/> 
+    <display value="Solteiro"/> 
+    <definition value="Um cidadão solteiro dentro do território brasileiro"/>     
+  </concept> 
+  <concept> 
+    <code value="casado"/> 
+    <display value="Casado"/> 
+    <definition value="Um cidadão casado dentro do território brasileiro"/>     
+  </concept>
+</CodeSystem>
