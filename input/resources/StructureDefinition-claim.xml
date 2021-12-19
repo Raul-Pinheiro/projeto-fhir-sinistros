@@ -20,7 +20,48 @@
   <fhirVersion value="4.0.1"/> 
 
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim"/> 
-  <derivation value="specialization"/>  
-  
+  <derivation value="constraint"/>  
+  <differential>
+    <element id="Claim.status">
+      <path value="Claim.status"/>
+      <code value="draft"/>
+      <min value="1"/>
+      <max value="1"/>      
+    </element>
+    <element id="Claim.type"> <!-- CodeableConcept-->
+      <path value="Claim.type"/>
+      <min value="1"/>
+      <max value="1"/>      
+    </element>
+
+    <element id="Claim.use">  
+      <path value="Claim.use"/>
+      <code vlaue="draft"/>
+      <min value="1"/>
+      <max value="1"/>      
+    </element> 
+
+    <element id="Claim.patient">
+      <path value="Claim.patient"/>
+      <type>
+        <code value="http://somewhere.org/fhir/uv/myig/StructureDefinition/patient"/>
+      </type>
+      <min value="1"/>   
+      <max value="1"/>     
+    </element>
+
+    <element id="Claim.created">
+      <path value="Claim.created"/>
+      <definition value="2021-12-19 00:00:00"/>
+      <min value="1"/>
+      <max value="1"/>      
+    </element>
+
+   
+
+
+
+
+  </differential>
 
 </StructureDefinition> 
