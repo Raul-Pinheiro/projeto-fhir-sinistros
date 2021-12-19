@@ -1,0 +1,35 @@
+{
+  "resourceType": "Practitioner",
+  "id": "practitioner-1",
+  "meta": {
+    "profile": [
+      "http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.saude.gov.br/fhir/r4/NamingSystem/cpf",
+      "value": "3333333333"
+    },
+  ],
+  "name": [
+    {
+      "use": "official",
+      "text": "Medicino Medicante"
+    }
+  ],
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://rnds.saude.gov.br/fhir/r4/CodeSystem/BRCBO",
+            "code": "225170",
+            "display": "Médico generalista"
+          }
+        ]
+      }
+    }
+  ]
+}

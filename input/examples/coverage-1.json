@@ -1,0 +1,25 @@
+{
+  "resourceType": "Coverage",
+  "id": "coverage-1",
+  "meta": {
+    "profile": [
+      "http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://somewhere.org/fhir/NamingSystem/coverage",
+      "value": "123456789101"
+    }
+  ],
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/patient-1"
+  },
+  "payor": [
+    {
+      "reference": "Patient/patient-1"
+    }
+  ]
+}

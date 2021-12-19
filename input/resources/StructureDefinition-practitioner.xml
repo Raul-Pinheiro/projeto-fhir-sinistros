@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="practitioner"/>
+  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner"/>
+  <name value="Practitioner"/>
+  <title value="Practitioner"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="Practitioner"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>

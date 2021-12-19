@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="organization"/>
+  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/organization"/>
+  <name value="Organization"/>
+  <title value="Organization"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="Organization"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+    <element id="Organization.identifier:sliceCNPJRNDS">
+      <path value="Organization.identifier"/>
+      <sliceName value="sliceCPFRNDS"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Organization.identifier:sliceCNPJRNDS.use">
+      <path value="Organization.identifier.use"/>
+      <min value="1"/>
+      <fixedCode value="official"/>
+    </element>
+    <element id="Organization.identifier:sliceCNPJRNDS.system">
+      <path value="Organization.identifier.system"/>
+      <min value="1"/>
+      <fixedUri value="http://rnds.saude.gov.br/fhir/r4/NamingSystem/cnpj"/>
+    </element>
+    <element id="Organization.identifier:sliceCNPJRNDS.value">
+      <path value="Organization.identifier.value"/>
+      <min value="1"/>
+    </element>
+    <element id="Organization.type:sliceOrganizacaoPaciente">
+      <path value="Organization.type"/>
+      <sliceName value="sliceOrganizacaoPaciente"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="OrganizationType"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Used to categorize the organization."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/organization-type"/>
+      </binding>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>

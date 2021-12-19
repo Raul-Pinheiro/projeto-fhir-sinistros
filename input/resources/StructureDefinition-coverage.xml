@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="coverage"/>
+  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage"/>
+  <name value="Coverage"/>
+  <title value="Coverage"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="Coverage"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Coverage.identifier">
+      <path value="Coverage.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>

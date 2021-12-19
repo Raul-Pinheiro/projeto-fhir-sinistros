@@ -1,26 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Claim"/> 
-  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/Claim"/> 
-  <!-- <url value="http://hl7.org/fhir/StructureDefinition/Claim"/>  -->
-
-  <name value="Claim"/> 
-  <status value="draft"/>
-  <type value="Claim"/> 
+  <id value="claim"/>
+  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/claim"/>
+  <name value="Claim"/>
   <title value="Claim"/>
-  <!-- <kind value="complex-type"/> -->
-  <kind value="resource"/> 
-  <abstract value="true"/> 
-
-   
-  <date value="2019-11-01T09:29:23+11:00"/> 
-  <publisher value="Health Level Seven International (Financial Management)"/> 
-  
-  <fhirVersion value="4.0.1"/> 
-
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim"/> 
-  <derivation value="specialization"/>  
-  
-
-</StructureDefinition> 
+  <status value="draft"/>
+  <experimental value="true"/>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="Claim"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Claim.identifier">
+      <path value="Claim.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+    <element id="Claim.diagnosis">
+      <path value="Claim.diagnosis"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Claim.diagnosis.sequence">
+      <path value="Claim.diagnosis.sequence"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="Claim.diagnosis.diagnosisCodeableConcept">
+      <path value="Claim.diagnosis.diagnosisCodeableConcept"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ICD10"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Example ICD10 Diagnostic codes."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/icd-10"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

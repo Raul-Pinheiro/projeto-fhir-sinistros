@@ -1,0 +1,27 @@
+{
+  "resourceType": "Encounter",
+  "id": "encounter-1",
+  "meta": {
+    "profile": [
+      "http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://somewhere.org/fhir/NamingSystem/encounter",
+      "value": "123456789101"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "EMER"
+  },
+  "subject": {
+    "reference": "Patient/patient-1"
+  },
+  "period": {
+    "start":"2021-12-20"
+  }
+}

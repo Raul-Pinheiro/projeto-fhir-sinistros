@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="encounter"/>
+  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter"/>
+  <name value="Encounter"/>
+  <title value="Encounter"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="Encounter"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Encounter.identifier">
+      <path value="Encounter.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -6,8 +6,7 @@
   <title value="Patient"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-10-21T21:31:00-03:00"/>
-  <kind value="complex-type"/>
+  <kind value="resource"/>
   <abstract value="true"/>
   <type value="Patient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient"/>
@@ -24,23 +23,23 @@
       </slicing>
       <min value="1"/>
     </element>
-    <element id="Patient.identifier:CPFRNDS">
+    <element id="Patient.identifier:sliceCPFRNDS">
       <path value="Patient.identifier"/>
-      <sliceName value="CPFRNDS"/>
+      <sliceName value="sliceCPFRNDS"/>
       <min value="1"/>
-      <max value="1"/>      
+      <max value="1"/>
     </element>
-    <element id="Patient.identifier:CPFRNDS.use">
-      <path value="Patient.identifier.use"/>      
+    <element id="Patient.identifier:sliceCPFRNDS.use">
+      <path value="Patient.identifier.use"/>
       <min value="1"/>
       <fixedCode value="official"/>
     </element>
-    <element id="Patient.identifier:CPFRNDS.system">
-      <path value="Patient.identifier.system"/>      
+    <element id="Patient.identifier:sliceCPFRNDS.system">
+      <path value="Patient.identifier.system"/>
       <min value="1"/>
       <fixedUri value="http://rnds.saude.gov.br/fhir/r4/NamingSystem/cpf"/>
     </element>
-    <element id="Patient.identifier:CPFRNDS.value">
+    <element id="Patient.identifier:sliceCPFRNDS.value">
       <path value="Patient.identifier.value"/>
       <min value="1"/>
     </element>
@@ -52,6 +51,10 @@
       <path value="Patient.name.text"/>
       <min value="1"/>
     </element>
-    
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
   </differential>
-</StructureDefinition> 
+</StructureDefinition>

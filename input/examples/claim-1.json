@@ -1,0 +1,104 @@
+{
+  "resourceType": "Claim",
+  "id": "claim-1",
+  "meta": {
+    "profile": [
+      "http://somewhere.org/fhir/uv/myig/StructureDefinition/claim"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://somewhere.org/fhir/NamingSystem/claim",
+      "value": "123456789101"
+    }
+  ],
+  "status": "active",
+  "use": "claim",
+  "created": "2020-12-12",
+  "type": {
+    "text": "Institutional"
+  },
+  "priority": {
+    "text": "Normal"
+  },
+  "patient": {
+    "reference": "Patient/patient-1"
+  },
+  "provider": {
+    "reference": "Practitioner/practitioner-1"
+  },
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "identifier": {
+        "system": "http://somewhere.org/fhir/uv/myig/StructureDefinition/claim",
+        "value": "12345"
+      },
+      "coverage": {
+        "reference": "Coverage/coverage-1"
+      }
+    }
+  ],
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "M47.816"
+          }
+        ]
+      }
+    }
+  ],
+  "procedure": [
+    {
+      "sequence": 1,
+      "procedureCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS",
+            "code": "31309127"
+          }
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "encounter": [
+        {
+          "reference": "Encounter/encounter-1"
+        }
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "code": "1200"
+          }
+        ]
+      },
+      "procedureSequence": [
+        1
+      ],
+      "servicedDate": "2021-12-20",
+      "quantity": {
+        "system": "http://unitsofmeasure.org",
+        "code": "%",
+        "value": 1
+      },
+      "unitPrice": {
+        "value": 135.57,
+        "currency": "BRL"
+      },
+      "net": {
+        "value": 135.57,
+        "currency": "BRL"
+      }
+    }
+  ]
+}

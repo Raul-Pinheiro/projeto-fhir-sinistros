@@ -45,7 +45,7 @@
   </dependsOn>-->
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
-      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->    
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
 <!--    <resource>
       <reference>
         <reference value="Library/example"/>
@@ -53,27 +53,8 @@
       <name value="Simple library example"/>
       <description value="A simple example showing how library is pre-loaded"/>
     </resource> -->
-    <!-- <resource>
-      <reference>
-        <reference value="Patient/patient-1"/>
-      </reference>
-      <name value="Paciente com CPF apenas"/>
-      <description value="Paciente sem nome identificado pelo CPF na RNDS"/>
-    </resource>
     <resource>
-      <reference>
-        <reference value="CodeSystem/estado-civil"/>
-      </reference>
-      <name value="Uma terminologia para classificar estado civil"/>
-      <description value="Uma terminologia para classificar estado civil"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/patient-maritalstatus"/>
-      </reference>
-      <name value="Um domínio de valores para classificar estado civil"/>
-      <description value="Um domínio de valores para classificar estado civil"/>
-    </resource> -->
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -88,7 +69,7 @@
         <nameUrl value="background.html"/>
         <title value="Background"/>
         <generation value="html"/>
-      </page>      
+      </page>
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
