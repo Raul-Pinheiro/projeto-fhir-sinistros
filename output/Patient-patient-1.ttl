@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://somewhere.org/fhir/uv/myig/Patient/patient-1> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/patient";
+       fhir:index 0;
+       fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"patient-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient.html\">Patient</a></p></div><p><b>identifier</b>: id: 12345678910 (OFFICIAL)</p><p><b>name</b>: Fulano Beltrano Sicrano</p><p><b>birthDate</b>: 2001-12-29</p><p><b>managingOrganization</b>: <a href=\"Organization-organization-1.html\">Organization/organization-1</a> \"Empresa 1\"</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cpf" ];
+     fhir:Identifier.value [ fhir:value "12345678910" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Fulano Beltrano Sicrano" ]
+  ];
+  fhir:Patient.birthDate [ fhir:value "2001-12-29"^^xsd:date];
+  fhir:Patient.managingOrganization [
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/organization-1>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-1" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://somewhere.org/fhir/uv/myig/Patient/patient-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Encounter",
+  "id": "encounter-1",
+  "meta": {
+    "profile": [
+      "http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"encounter-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter.html\">Encounter</a></p></div><p><b>identifier</b>: id: 123456789101 (OFFICIAL)</p><p><b>status</b>: finished</p><p><b>class</b>: emergency (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code EMER = 'emergency', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">Patient/patient-1</a> \"\"</p><p><b>period</b>: 2021-12-20 --&gt; (ongoing)</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://somewhere.org/fhir/NamingSystem/encounter",
+      "value": "123456789101"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "EMER"
+  },
+  "subject": {
+    "reference": "Patient/patient-1"
+  },
+  "period": {
+    "start": "2021-12-20"
+  }
+}
