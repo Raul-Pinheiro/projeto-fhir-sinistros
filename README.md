@@ -10,14 +10,16 @@ You will need Java, Ruby and jekyll installed.
 Finally, you will need the FHIR IG Publisher. It's available in repo or on:
 https://github.com/HL7/fhir-ig-publisher
 
-## How to generate this profile
+## How to use docker image
 
-##### first time
+##### build at first time
+At the first time, run the build
 ```
 make build
 ```
 
 ##### To generate the IG
+To run the publisher:
 ```
 make run
 ```
