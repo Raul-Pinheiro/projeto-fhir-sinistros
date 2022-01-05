@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="example.fhir.uv.myig"/>
+  <id value="example.fhir.uv.sinistros"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>YourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what MyIG is about (probably the same text as in your readme)</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>YourComputableSinistrosNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/sinistros/ImplementationGuide/example.fhir.uv.sinistros</pre><div><p>A brief description of what Sinistros is about (probably the same text as in your readme)</p>
 </div></div>
   </text>
-  <url value="http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
+  <url value="http://somewhere.org/fhir/uv/sinistros/ImplementationGuide/example.fhir.uv.sinistros"/>
   <version value="0.2.0"/>
-  <name value="YourComputableMyIGNameHere"/>
-  <title value="Your User Friendly Name for MyIG Here"/>
+  <name value="YourComputableSinistrosNameHere"/>
+  <title value="Sinistros"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-12-20T21:45:52-03:00"/>
+  <date value="2022-01-12T22:14:31+00:00"/>
   <publisher value="HL7 International - [Some] Work Group"/>
   <contact>
     <telecom>
@@ -20,14 +20,14 @@
       <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="A brief description of what MyIG is about (probably the same text as in your readme)"/>
+  <description value="A brief description of what Sinistros is about (probably the same text as in your readme)"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="example.fhir.uv.myig"/>
+  <packageId value="example.fhir.uv.sinistros"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>
@@ -140,7 +140,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://somewhere.org/fhir/uv/myig/history.html"/>
+        <valueString value="http://somewhere.org/fhir/uv/sinistros/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -231,7 +231,7 @@
         <reference value="Patient/patient-1"/>
       </reference>
       <name value="Example Patient - patient-1"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/patient"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -241,7 +241,17 @@
         <reference value="Claim/claim-1"/>
       </reference>
       <name value="Example Claim - claim-1"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/claim"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-3"/>
+      </reference>
+      <name value="Example Organization - organization-3"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -251,7 +261,7 @@
         <reference value="Organization/organization-2"/>
       </reference>
       <name value="Example Organization - organization-2"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/organization"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -261,7 +271,7 @@
         <reference value="Practitioner/practitioner-1"/>
       </reference>
       <name value="Example Practitioner - practitioner-1"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -271,7 +281,7 @@
         <reference value="Encounter/encounter-1"/>
       </reference>
       <name value="Example Encounter - encounter-1"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -281,7 +291,7 @@
         <reference value="Coverage/coverage-1"/>
       </reference>
       <name value="Example Coverage - coverage-1"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -291,7 +301,7 @@
         <reference value="Organization/organization-1"/>
       </reference>
       <name value="Example Organization - organization-1"/>
-      <exampleCanonical value="http://somewhere.org/fhir/uv/myig/StructureDefinition/organization"/>
+      <exampleCanonical value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -300,7 +310,8 @@
       <reference>
         <reference value="StructureDefinition/encounter"/>
       </reference>
-      <name value="Encounter"/>
+      <name value="Atendimento"/>
+      <description value="Atendimento/Consulta"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -309,7 +320,8 @@
       <reference>
         <reference value="StructureDefinition/patient"/>
       </reference>
-      <name value="Patient"/>
+      <name value="Paciente"/>
+      <description value="Paciente, também conhecido como cadastro vidas, beneficiários e segurados"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -318,7 +330,18 @@
       <reference>
         <reference value="StructureDefinition/coverage"/>
       </reference>
-      <name value="Coverage"/>
+      <name value="Cobertura"/>
+      <description value="Cobertura"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/claim-senha"/>
+      </reference>
+      <name value="Senha/Token"/>
+      <description value="Autorização senha/token de um sinistro"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -327,7 +350,8 @@
       <reference>
         <reference value="StructureDefinition/organization"/>
       </reference>
-      <name value="Organization"/>
+      <name value="Organização"/>
+      <description value="Organização, como hospital, prestador de saúde ou empresa"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -336,7 +360,8 @@
       <reference>
         <reference value="StructureDefinition/claim"/>
       </reference>
-      <name value="Claim"/>
+      <name value="Sinistros"/>
+      <description value="Sinistros/Eventos de pacientes"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -345,7 +370,8 @@
       <reference>
         <reference value="StructureDefinition/practitioner"/>
       </reference>
-      <name value="Practitioner"/>
+      <name value="Profissional de Saúde"/>
+      <description value="Profissional de Saúde"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -353,7 +379,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Sinistros Home Page"/>
         <generation value="html"/>
       </page>
       <page>

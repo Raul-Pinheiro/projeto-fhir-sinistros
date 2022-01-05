@@ -3,7 +3,7 @@
   "id": "coverage-1",
   "meta": {
     "profile": [
-      "http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage"
+      "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage"
     ]
   },
   "identifier": [

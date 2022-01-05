@@ -3,7 +3,7 @@
   "id": "organization-2",
   "meta": {
     "profile": [
-      "http://somewhere.org/fhir/uv/myig/StructureDefinition/organization"
+      "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization"
     ]
   },
   "identifier": [

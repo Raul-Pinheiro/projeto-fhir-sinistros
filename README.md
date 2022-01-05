@@ -4,6 +4,8 @@
 
 Trabalho para o curso RNDS FHIR de 2021.
 
+[Acesso ao IG do trabalho de Sinistros](https://raul-pinheiro.github.io/projeto-fhir-sinistros/output/)
+
 ## Prerequisites run out of docker
 
 You will need Java, Ruby and jekyll installed.

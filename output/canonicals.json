@@ -1,50 +1,57 @@
 [
   {
-    "id": "example.fhir.uv.myig",
+    "id": "example.fhir.uv.sinistros",
     "type": "ImplementationGuide",
-    "url": "http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
+    "url": "http://somewhere.org/fhir/uv/sinistros/ImplementationGuide/example.fhir.uv.sinistros",
     "version": "0.2.0",
-    "name": "YourComputableMyIGNameHere"
+    "name": "YourComputableSinistrosNameHere"
   },
   {
     "id": "claim",
     "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/claim",
+    "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim",
     "version": "0.2.0",
     "name": "Claim"
   },
   {
+    "id": "claim-senha",
+    "type": "StructureDefinition",
+    "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha",
+    "version": "0.2.0",
+    "name": "claim-senha"
+  },
+  {
     "id": "coverage",
     "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage",
+    "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage",
     "version": "0.2.0",
     "name": "Coverage"
   },
   {
     "id": "encounter",
     "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter",
+    "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter",
     "version": "0.2.0",
     "name": "Encounter"
   },
   {
     "id": "organization",
     "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/organization",
+    "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization",
     "version": "0.2.0",
     "name": "Organization"
   },
   {
     "id": "patient",
     "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/patient",
+    "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient",
     "version": "0.2.0",
     "name": "Patient"
   },
   {
     "id": "practitioner",
     "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner",
+    "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner",
     "version": "0.2.0",
     "name": "Practitioner"
   }

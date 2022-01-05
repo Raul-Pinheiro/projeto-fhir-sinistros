@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Practitioner/practitioner-1> a fhir:Practitioner;
+<http://somewhere.org/fhir/uv/sinistros/Practitioner/practitioner-1> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "practitioner-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner";
+       fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner";
        fhir:index 0;
-       fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner>
+       fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"practitioner-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-practitioner.html\">Practitioner</a></p></div><p><b>identifier</b>: id: 3333333333 (OFFICIAL)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"practitioner-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-practitioner.html\">Profissional de Saúde</a></p></div><p><b>identifier</b>: id: 3333333333 (OFFICIAL)</p></div>"
   ];
   fhir:Practitioner.identifier [
      fhir:index 0;
@@ -28,7 +28,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Practitioner/practitioner-1.ttl> a owl:Ontology;
+<http://somewhere.org/fhir/uv/sinistros/Practitioner/practitioner-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,63 +1,65 @@
-﻿YourComputableMyIGNameHere : Validation Results
+﻿YourComputableSinistrosNameHere : Validation Results
 =========================================
 
-err = 0, warn = 15, info = 17
-IG Publisher Version: 1.1.92
-Generated Mon Dec 20 21:46:27 BRT 2021. FHIR version 4.0.1 for example.fhir.uv.myig#0.2.0 (canonical = http://somewhere.org/fhir/uv/myig)
- Build Errors : 0 / 13 / 0
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/examples/claim-1 : 0 / 2 / 5
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/examples/coverage-1 : 0 / 0 / 2
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/examples/encounter-1 : 0 / 0 / 2
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/examples/organization-1 : 0 / 0 / 2
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/examples/organization-2 : 0 / 0 / 2
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/examples/patient-1 : 0 / 0 / 2
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/examples/practitioner-1 : 0 / 0 / 2
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/myig : 0 / 0 / 3
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/resources/StructureDefinition-claim : 0 / 0 / 3
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/resources/StructureDefinition-coverage : 0 / 0 / 3
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/resources/StructureDefinition-encounter : 0 / 0 / 3
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/resources/StructureDefinition-organization : 0 / 0 / 3
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/resources/StructureDefinition-patient : 0 / 0 / 3
- /home/m/m/rndsfhir/projeto-fhir-sinistros/input/resources/StructureDefinition-practitioner : 0 / 0 / 3
+err = 0, warn = 14, info = 19
+IG Publisher Version: 1.1.94
+Generated Wed Jan 12 22:14:53 GMT 2022. FHIR version 4.0.1 for example.fhir.uv.sinistros#0.2.0 (canonical = http://somewhere.org/fhir/uv/sinistros)
+ Build Errors : 0 / 8 / 0
+ /app/dev/input/examples/claim-1 : 0 / 3 / 4
+ /app/dev/input/examples/coverage-1 : 0 / 0 / 1
+ /app/dev/input/examples/encounter-1 : 0 / 0 / 1
+ /app/dev/input/examples/organization-1 : 0 / 0 / 1
+ /app/dev/input/examples/organization-2 : 0 / 0 / 1
+ /app/dev/input/examples/organization-3 : 0 / 0 / 1
+ /app/dev/input/examples/patient-1 : 0 / 0 / 1
+ /app/dev/input/examples/practitioner-1 : 0 / 0 / 1
+ /app/dev/input/resources/StructureDefinition-claim : 0 / 2 / 3
+ /app/dev/input/resources/StructureDefinition-coverage : 0 / 0 / 3
+ /app/dev/input/resources/StructureDefinition-encounter : 0 / 0 / 3
+ /app/dev/input/resources/StructureDefinition-extension-claim-senha : 0 / 1 / 3
+ /app/dev/input/resources/StructureDefinition-organization : 0 / 0 / 3
+ /app/dev/input/resources/StructureDefinition-patient : 0 / 0 / 3
+ /app/dev/input/resources/StructureDefinition-practitioner : 0 / 0 / 3
+ /app/dev/input/sinistros : 0 / 0 / 3
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Claim/claim-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/organization-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/organization-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/encounter-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Coverage/coverage-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/organization-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/encounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/coverage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/organization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/claim.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == input/examples/claim-1.json ==
 WARNING: Claim/claim-1: Claim.type: No code provided, and a code should be provided from the value set 'Claim Type Codes' (http://hl7.org/fhir/ValueSet/claim-type)
+WARNING: Claim/claim-1: Claim.priority.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Claim/claim-1: Claim.procedure[0].procedure.ofType(CodeableConcept): ValueSet http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS not found by validator
 INFORMATION: Claim/claim-1: Claim.procedure[0].procedure.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS' is unknown so the code cannot be validated
-WARNING: Claim/claim-1: Claim.item[0].productOrService.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Claim/claim-1: Claim.item[0].unitPrice.currency: The value provided ('BRL') could not be validated in the absence of a terminology server
 INFORMATION: Claim/claim-1: Claim.item[0].net.currency: The value provided ('BRL') could not be validated in the absence of a terminology server
 == input/examples/coverage-1.json ==
 == input/examples/encounter-1.json ==
 == input/examples/organization-1.json ==
 == input/examples/organization-2.json ==
+== input/examples/organization-3.json ==
 == input/examples/patient-1.json ==
 == input/examples/practitioner-1.json ==
-== input/myig.xml ==
-INFORMATION: ImplementationGuide/example.fhir.uv.myig: ImplementationGuide.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
-INFORMATION: ImplementationGuide/example.fhir.uv.myig: ImplementationGuide.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated
 == input/resources/StructureDefinition-claim.xml ==
 INFORMATION: StructureDefinition/claim: StructureDefinition.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
 INFORMATION: StructureDefinition/claim: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated
+WARNING: StructureDefinition/claim: StructureDefinition.differential.element[17].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS on element Claim.procedure.procedureCodeableConcept could not be resolved
+WARNING: StructureDefinition/claim: StructureDefinition.snapshot.element[82].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS on element Claim.procedure.procedure[x] could not be resolved
 == input/resources/StructureDefinition-coverage.xml ==
 INFORMATION: StructureDefinition/coverage: StructureDefinition.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
 INFORMATION: StructureDefinition/coverage: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated
 == input/resources/StructureDefinition-encounter.xml ==
 INFORMATION: StructureDefinition/encounter: StructureDefinition.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
 INFORMATION: StructureDefinition/encounter: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated
+== input/resources/StructureDefinition-extension-claim-senha.xml ==
+WARNING: StructureDefinition/claim-senha: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+INFORMATION: StructureDefinition/claim-senha: StructureDefinition.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
+INFORMATION: StructureDefinition/claim-senha: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated
 == input/resources/StructureDefinition-organization.xml ==
 INFORMATION: StructureDefinition/organization: StructureDefinition.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
 INFORMATION: StructureDefinition/organization: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated
@@ -67,3 +69,6 @@ INFORMATION: StructureDefinition/patient: StructureDefinition.jurisdiction[0].co
 == input/resources/StructureDefinition-practitioner.xml ==
 INFORMATION: StructureDefinition/practitioner: StructureDefinition.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
 INFORMATION: StructureDefinition/practitioner: StructureDefinition.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated
+== input/sinistros.xml ==
+INFORMATION: ImplementationGuide/example.fhir.uv.sinistros: ImplementationGuide.jurisdiction[0]: Could not confirm that the codes provided are from the extensible value set http://hl7.org/fhir/ValueSet/jurisdiction because there is no terminology service
+INFORMATION: ImplementationGuide/example.fhir.uv.sinistros: ImplementationGuide.jurisdiction[0].coding[0]: Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated

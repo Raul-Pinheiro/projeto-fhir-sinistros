@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organization-3"/>
+  <meta>
+    <profile value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "organization-3" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-organization.html">Organização</a></p></div><p><b>identifier</b>: id: 3333333 (OFFICIAL)</p><p><b>type</b>: Insurance Company <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-organization-type.html">Organization type</a>#ins)</span></p><p><b>name</b>: Operadora de Saúde 1</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://rnds.saude.gov.br/fhir/r4/NamingSystem/cnpj"/>
+    <value value="3333333"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="ins"/>
+    </coding>
+  </type>
+  <name value="Operadora de Saúde 1"/>
+</Organization>

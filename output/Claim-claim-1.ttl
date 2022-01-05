@@ -5,25 +5,34 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Claim/claim-1> a fhir:Claim;
+<http://somewhere.org/fhir/uv/sinistros/Claim/claim-1> a fhir:Claim;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "claim-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/claim";
+       fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim";
        fhir:index 0;
-       fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/claim>
+       fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim>
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"claim-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-claim.html\">Claim</a></p></div><p><b>identifier</b>: id: 123456789101 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-patient-1.html\">Patient/patient-1</a> \"\"</p><p><b>created</b>: 2020-12-12</p><p><b>provider</b>: <a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td>*</td><td>1</td><td>M47.816 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-icd10.html\">ICD-10</a>#M47.816)</span></td></tr></table><h3>Procedures</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Procedure[x]</b></td></tr><tr><td>*</td><td>1</td><td>31309127 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (BRCBHPMTUSS#31309127)</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>id: 12345</td><td><a href=\"Coverage-coverage-1.html\">Coverage/coverage-1</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: 1200 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1200)</span></p><p><b>serviced</b>: 2021-12-20</p><p><b>quantity</b>: 1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-1.html\">Encounter/encounter-1</a></p></blockquote></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"claim-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-claim.html\">Sinistros</a></p></div><p><b>Senha/Token</b>: 4564564</p><p><b>identifier</b>: id: 123456789101 (USUAL)</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-patient-1.html\">Patient/patient-1</a> \"\"</p><p><b>created</b>: 2020-12-12</p><p><b>provider</b>: <a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Normal)</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td>*</td><td>1</td><td>M47.816 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-icd10.html\">ICD-10</a>#M47.816)</span></td></tr></table><h3>Procedures</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Procedure[x]</b></td></tr><tr><td>*</td><td>1</td><td>31309127 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (BRCBHPMTUSS#31309127)</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>id: 12345</td><td><a href=\"Coverage-coverage-1.html\">Coverage/coverage-1</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>diagnosisSequence</b>: 1</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: Expense <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-ex-USCLS.html\">USCLS Codes</a>#99555)</span></p><p><b>serviced</b>: 2021-12-20T20:45:00Z --&gt; 2021-12-21T12:45:00Z</p><p><b>quantity</b>: 1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-1.html\">Encounter/encounter-1</a></p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha" ];
+     fhir:Extension.valueString [ fhir:value "4564564" ]
   ];
   fhir:Claim.identifier [
      fhir:index 0;
-     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.use [ fhir:value "usual" ];
      fhir:Identifier.system [ fhir:value "http://somewhere.org/fhir/NamingSystem/claim" ];
-     fhir:Identifier.value [ fhir:value "123456789101" ]
+     fhir:Identifier.value [ fhir:value "123456789101" ];
+     fhir:Identifier.assigner [
+       fhir:link <http://somewhere.org/fhir/uv/sinistros/Organization/organization-3>;
+       fhir:Reference.reference [ fhir:value "Organization/organization-3" ]
+     ]
   ];
   fhir:Claim.status [ fhir:value "active"];
   fhir:Claim.type [
@@ -31,16 +40,19 @@
   ];
   fhir:Claim.use [ fhir:value "claim"];
   fhir:Claim.patient [
-     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/patient-1>;
+     fhir:link <http://somewhere.org/fhir/uv/sinistros/Patient/patient-1>;
      fhir:Reference.reference [ fhir:value "Patient/patient-1" ]
   ];
   fhir:Claim.created [ fhir:value "2020-12-12"^^xsd:date];
   fhir:Claim.provider [
-     fhir:link <http://somewhere.org/fhir/uv/myig/Practitioner/practitioner-1>;
+     fhir:link <http://somewhere.org/fhir/uv/sinistros/Practitioner/practitioner-1>;
      fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ]
   ];
   fhir:Claim.priority [
-     fhir:CodeableConcept.text [ fhir:value "Normal" ]
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "Normal" ]
+     ]
   ];
   fhir:Claim.diagnosis [
      fhir:index 0;
@@ -69,17 +81,21 @@
      fhir:Claim.insurance.sequence [ fhir:value "1"^^xsd:positiveInteger ];
      fhir:Claim.insurance.focal [ fhir:value "true"^^xsd:boolean ];
      fhir:Claim.insurance.identifier [
-       fhir:Identifier.system [ fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/claim" ];
+       fhir:Identifier.system [ fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim" ];
        fhir:Identifier.value [ fhir:value "12345" ]
      ];
      fhir:Claim.insurance.coverage [
-       fhir:link <http://somewhere.org/fhir/uv/myig/Coverage/coverage-1>;
+       fhir:link <http://somewhere.org/fhir/uv/sinistros/Coverage/coverage-1>;
        fhir:Reference.reference [ fhir:value "Coverage/coverage-1" ]
      ]
   ];
   fhir:Claim.item [
      fhir:index 0;
      fhir:Claim.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.item.diagnosisSequence [
+       fhir:value "1"^^xsd:positiveInteger;
+       fhir:index 0
+     ];
      fhir:Claim.item.procedureSequence [
        fhir:value "1"^^xsd:positiveInteger;
        fhir:index 0
@@ -87,10 +103,15 @@
      fhir:Claim.item.productOrService [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.code [ fhir:value "1200" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-USCLS" ];
+         fhir:Coding.code [ fhir:value "99555" ];
+         fhir:Coding.display [ fhir:value "Expense" ]
        ]
      ];
-     fhir:Claim.item.servicedDate [ fhir:value "2021-12-20"^^xsd:date ];
+     fhir:Claim.item.servicedPeriod [
+       fhir:Period.start [ fhir:value "2021-12-20T20:45:00.000Z"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2021-12-21T12:45:00.000Z"^^xsd:dateTime ]
+     ];
      fhir:Claim.item.quantity [
        fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
        fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
@@ -106,14 +127,14 @@
      ];
      fhir:Claim.item.encounter [
        fhir:index 0;
-       fhir:link <http://somewhere.org/fhir/uv/myig/Encounter/encounter-1>;
+       fhir:link <http://somewhere.org/fhir/uv/sinistros/Encounter/encounter-1>;
        fhir:Reference.reference [ fhir:value "Encounter/encounter-1" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Claim/claim-1.ttl> a owl:Ontology;
+<http://somewhere.org/fhir/uv/sinistros/Claim/claim-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

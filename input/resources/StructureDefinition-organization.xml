@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="organization"/>
-  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/organization"/>
+  <url value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization"/>
   <name value="Organization"/>
-  <title value="Organization"/>
+  <title value="Organização"/>
+  <description value="Organização, como hospital, prestador de saúde ou empresa"/>
   <status value="draft"/>
   <experimental value="true"/>
   <kind value="resource"/>
@@ -25,7 +26,7 @@
     </element>
     <element id="Organization.identifier:sliceCNPJRNDS">
       <path value="Organization.identifier"/>
-      <sliceName value="sliceCPFRNDS"/>
+      <sliceName value="sliceCNPJRNDS"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -42,12 +43,14 @@
     <element id="Organization.identifier:sliceCNPJRNDS.value">
       <path value="Organization.identifier.value"/>
       <min value="1"/>
+      <short value="CNPJ da organização"/>
+      <definition value="CNPJ da organização"/>
     </element>
     <element id="Organization.type:sliceOrganizacaoPaciente">
       <path value="Organization.type"/>
       <sliceName value="sliceOrganizacaoPaciente"/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="CodeableConcept"/>
       </type>
@@ -60,11 +63,15 @@
         <description value="Used to categorize the organization."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/organization-type"/>
       </binding>
+      <short value="Tipo da organização"/>
+      <definition value="Tipo da organização"/>
     </element>
     <element id="Organization.name">
       <path value="Organization.name"/>
       <min value="1"/>
       <max value="1"/>
+      <short value="Nome da organização"/>
+      <definition value="Nome da organização"/>
     </element>
   </differential>
 </StructureDefinition>

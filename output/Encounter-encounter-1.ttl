@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Encounter/encounter-1> a fhir:Encounter;
+<http://somewhere.org/fhir/uv/sinistros/Encounter/encounter-1> a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "encounter-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter";
+       fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter";
        fhir:index 0;
-       fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter>
+       fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"encounter-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter.html\">Encounter</a></p></div><p><b>identifier</b>: id: 123456789101 (OFFICIAL)</p><p><b>status</b>: finished</p><p><b>class</b>: emergency (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code EMER = 'emergency', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">Patient/patient-1</a> \"\"</p><p><b>period</b>: 2021-12-20 --&gt; (ongoing)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"encounter-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter.html\">Atendimento</a></p></div><p><b>identifier</b>: id: 123456789101 (OFFICIAL)</p><p><b>status</b>: finished</p><p><b>class</b>: emergency (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code EMER = 'emergency', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">Patient/patient-1</a> \"\"</p><p><b>period</b>: 2021-12-20T23:00:00Z --&gt; (ongoing)</p></div>"
   ];
   fhir:Encounter.identifier [
      fhir:index 0;
@@ -31,16 +31,16 @@
      fhir:Coding.code [ fhir:value "EMER" ]
   ];
   fhir:Encounter.subject [
-     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/patient-1>;
+     fhir:link <http://somewhere.org/fhir/uv/sinistros/Patient/patient-1>;
      fhir:Reference.reference [ fhir:value "Patient/patient-1" ]
   ];
   fhir:Encounter.period [
-     fhir:Period.start [ fhir:value "2021-12-20"^^xsd:date ]
+     fhir:Period.start [ fhir:value "2021-12-20T23:00:00.000Z"^^xsd:dateTime ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Encounter/encounter-1.ttl> a owl:Ontology;
+<http://somewhere.org/fhir/uv/sinistros/Encounter/encounter-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="claim-senha"/>
+  <url value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha"/>
+  <version value="4.0.1"/>
+  <name value="claim-senha"/>
+  <title value="Senha/Token"/>
+  <description value="Autorização senha/token de um sinistro"/>
+  <status value="draft"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Claim"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha"/>
+    </element>
+    <element id="Extension.valueString">
+      <path value="Extension.valueString"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

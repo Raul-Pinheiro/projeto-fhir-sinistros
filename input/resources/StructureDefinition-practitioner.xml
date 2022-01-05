@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="practitioner"/>
-  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner"/>
+  <url value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner"/>
   <name value="Practitioner"/>
-  <title value="Practitioner"/>
+  <title value="Profissional de Saúde"/>
+  <description value="Profissional de Saúde"/>
   <status value="draft"/>
   <experimental value="true"/>
   <kind value="resource"/>
@@ -22,6 +23,8 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
+      <short value="ID do profissional"/>
+      <definition value="ID do profissional"/>
     </element>
   </differential>
 </StructureDefinition>

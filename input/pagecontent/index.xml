@@ -3,7 +3,10 @@
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
-    What is this IG about (in patient/non-expert friendly terms).
+  Os prestadores de serviços médicos geram dados de sinistros (eventos de saúde cobertos) para operadoras. Estes dados são usados para gestão de custos, criação de modelos preditivos e ações preventivas de saúde. Entretanto, a grande disparidade entre os dados trocados, a depender de quem envia e de quem recebe, gera complicações na preditibilidade e gestão dessas informações. Tendo isso em vista, em um escopo local, o guia de implementação FHIR possibilitará uma troca de informações confiável e efetiva entre as entidades, que é, de forma geral, o objetivo principal a ser atingido quando se está a interoperar.
+  </p>
+	<p>
+  Dessa forma, almeja-se criar uma forma simples e acessível de transmitir ou receber os registros gerados durante a prestação de serviços médicos, que poderão ser usados, futuramente, como pilar para análises mais complexas em nível nacional.
   </p>
 	<a name="technical"> </a>
 	<h3>Technical Overview</h3>

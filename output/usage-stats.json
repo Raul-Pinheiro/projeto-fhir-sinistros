@@ -1,44 +1,53 @@
 {
-  "package": "example.fhir.uv.myig",
+  "package": "example.fhir.uv.sinistros",
   "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha",
+      "title": "Senha/Token",
+      "types": [
+        "string",
+        "string"
+      ]
+    }
+  ],
   "profiles": {
     "Claim": [
       {
-        "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/claim",
-        "title": "Claim"
+        "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim",
+        "title": "Sinistros"
       }
     ],
     "Coverage": [
       {
-        "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage",
-        "title": "Coverage"
+        "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage",
+        "title": "Cobertura"
       }
     ],
     "Encounter": [
       {
-        "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter",
-        "title": "Encounter"
+        "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter",
+        "title": "Atendimento"
       }
     ],
     "Organization": [
       {
-        "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/organization",
-        "title": "Organization"
+        "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization",
+        "title": "Organização"
       }
     ],
     "Patient": [
       {
-        "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/patient",
-        "title": "Patient"
+        "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient",
+        "title": "Paciente"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner",
-        "title": "Practitioner"
+        "url": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner",
+        "title": "Profissional de Saúde"
       }
     ]
   },
@@ -59,6 +68,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -73,6 +85,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha": [
+      "Claim"
     ]
   }
 }

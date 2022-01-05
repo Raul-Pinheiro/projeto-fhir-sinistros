@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="claim"/>
-  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/claim"/>
+  <url value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim"/>
   <name value="Claim"/>
-  <title value="Claim"/>
+  <title value="Sinistros"/>
+  <description value="Sinistros/Eventos de pacientes"/>
   <status value="draft"/>
   <experimental value="true"/>
   <kind value="resource"/>
@@ -12,6 +13,40 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim"/>
   <derivation value="constraint"/>
   <differential>
+    <element id="Claim.extension">
+      <path value="Claim.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Claim.extension:claim-senha">
+      <path value="Claim.extension"/>
+      <sliceName value="claim-senha"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha"/>
+      </type>
+      <short value="extenção com a autorização senha/token de um sinistro"/>
+      <definition value="extenção com a autorização senha/token de um sinistro"/>
+    </element>
+    <element id="Claim.extension:claim-senha.url">
+      <path value="Claim.extension.url"/>
+      <min value="1"/>
+      <max value="1"/>
+      <fixedUri value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha"/>
+    </element>
+    <element id="Claim.extension:claim-senha.valueString">
+      <path value="Claim.extension.valueString"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
     <element id="Claim.identifier">
       <path value="Claim.identifier"/>
       <slicing>
@@ -22,6 +57,53 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
+      <short value="ID do sinistro"/>
+      <definition value="ID do sinistro"/>
+    </element>
+    <element id="Claim.status">
+      <path value="Claim.status"/>
+      <short value="Status do sinistro"/>
+      <definition value="Status do sinistro"/>
+      <patternCode value="active"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Claim.type">
+      <path value="Claim.type"/>
+      <short value="Categoria de sinistro"/>
+      <definition value="Categoria do sinistro"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Claim.use">
+      <path value="Claim.use"/>
+      <short value="Tipo de sinistro em relação ao uso"/>
+      <definition value="Tipo de sinistro em relação ao uso"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Claim.patient">
+      <path value="Claim.patient"/>
+      <short value="Referência o paciente do sinistro"/>
+      <definition value="Referência o paciente do sinistro"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="Claim.created">
+      <path value="Claim.created"/>
+      <short value="Data de cadastro do sinistro"/>
+      <definition value="Data de cadastro do sinistro"/>
+    </element>
+    <element id="Claim.priority">
+      <path value="Claim.priority"/>
+      <min value="1"/>
+      <max value="1"/>
+      <short value="Prioridade para o sinistro ser processado"/>
+      <definition value="Prioridade para o sinistro ser processado"/>
     </element>
     <element id="Claim.diagnosis">
       <path value="Claim.diagnosis"/>
@@ -54,6 +136,124 @@
         <description value="Example ICD10 Diagnostic codes."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/icd-10"/>
       </binding>
+      <short value="CID diagnosticada"/>
+      <definition value="CID diagnosticada"/>
+    </element>
+    <element id="Claim.procedure">
+      <path value="Claim.procedure"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Claim.procedure.sequence">
+      <path value="Claim.procedure.sequence"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="Claim.procedure.procedureCodeableConcept">
+      <path value="Claim.procedure.procedureCodeableConcept"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="TUSS"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Código TUSS"/>
+        <valueSet value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS"/>
+      </binding>
+      <short value="Código TUSS"/>
+      <definition value="Código TUSS"/>
+    </element>
+    <element id="Claim.item">
+      <path value="Claim.item"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Claim.item.sequence">
+      <path value="Claim.item.sequence"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="Claim.item.diagnosisSequence">
+      <path value="Claim.item.diagnosisSequence"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <short value="Referência a sequência do diagnóstico(Claim.diagnosis) usado caso aja(m) item(s)"/>
+      <definition value="Referência a sequência do diagnóstico(Claim.diagnosis) usado caso aja(m) item(s)"/>
+    </element>
+    <element id="Claim.item.procedureSequence">
+      <path value="Claim.item.procedureSequence"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <short value="Referência a sequência do diagnóstico(Claim.procedure) usado caso aja(m) item(s)"/>
+      <definition value="Referência a sequência do diagnóstico(Claim.procedure) usado caso aja(m) item(s)"/>
+    </element>
+    <element id="Claim.item.productOrService">
+      <path value="Claim.item.productOrService"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceProduct"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Allowable service and product codes."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/service-uscls"/>
+      </binding>
+      <short value="Produtos e/ou Serviços aplicados"/>
+      <definition value="Produtos e/ou Serviços aplicados"/>
+    </element>
+    <element id="Claim.item.servicedPeriod">
+      <path value="Claim.item.servicedPeriod"/>
+      <short value="Período que compreende o uso do item, preferenciamente incluíndo data e hora, como YYYY-MM-DDThh:mm:ss"/>
+      <definition value="Período que compreende o uso do item, preferenciamente incluíndo data e hora, como YYYY-MM-DDThh:mm:ss"/>
+    </element>
+    <element id="Claim.item.quantity">
+      <path value="Claim.item.quantity"/>
+      <short value="Quantidade de itens"/>
+      <definition value="Quantidade de itens"/>
+    </element>
+    <element id="Claim.item.unitPrice">
+      <path value="Claim.item.unitPrice"/>
+      <short value="Preço unitário do item"/>
+      <definition value="Preço unitário do item"/>
+    </element>
+    <element id="Claim.item.net">
+      <path value="Claim.item.net"/>
+      <short value="Preço total do(s) item(s)"/>
+      <definition value="Preço total do(s) item(s)"/>
+    </element>
+    <element id="Claim.item.encounter">
+      <path value="Claim.item.encounter"/>
+      <short value="Referência ao atendimento"/>
+      <definition value="Referência ao atendimento"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+      </type>
     </element>
   </differential>
 </StructureDefinition>

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Organization/organization-1> a fhir:Organization;
+<http://somewhere.org/fhir/uv/sinistros/Organization/organization-1> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "organization-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/organization";
+       fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization";
        fhir:index 0;
-       fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/organization>
+       fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"organization-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-organization.html\">Organization</a></p></div><p><b>identifier</b>: id: 11111111111 (OFFICIAL)</p><p><b>type</b>: Payer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-organization-type.html\">Organization type</a>#pay)</span></p><p><b>name</b>: Empresa 1</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"organization-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-organization.html\">Organização</a></p></div><p><b>identifier</b>: id: 11111111111 (OFFICIAL)</p><p><b>type</b>: Payer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-organization-type.html\">Organization type</a>#pay)</span></p><p><b>name</b>: Empresa 1</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -37,7 +37,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/Organization/organization-1.ttl> a owl:Ontology;
+<http://somewhere.org/fhir/uv/sinistros/Organization/organization-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

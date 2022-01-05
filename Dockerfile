@@ -20,4 +20,4 @@ RUN mkdir /app
 RUN apt install wget -y
 
 # download FHIR publisher
-RUN wget -c https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.89/publisher.jar -O /app/publisher.jar
+RUN wget -c https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.94/publisher.jar -O /app/publisher.jar

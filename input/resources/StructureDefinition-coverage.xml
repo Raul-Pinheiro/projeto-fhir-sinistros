@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="coverage"/>
-  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage"/>
+  <url value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage"/>
   <name value="Coverage"/>
-  <title value="Coverage"/>
+  <title value="Cobertura"/>
+  <description value="Cobertura"/>
   <status value="draft"/>
   <experimental value="true"/>
   <kind value="resource"/>
@@ -22,6 +23,8 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
+      <short value="ID da cobertura"/>
+      <definition value="ID do cobertura"/>
     </element>
   </differential>
 </StructureDefinition>

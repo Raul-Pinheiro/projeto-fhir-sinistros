@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="patient"/>
-  <url value="http://somewhere.org/fhir/uv/myig/StructureDefinition/patient"/>
+  <url value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient"/>
   <name value="Patient"/>
-  <title value="Patient"/>
+  <title value="Paciente"/>
+  <description value="Paciente, também conhecido como cadastro vidas, beneficiários e segurados"/>
   <status value="draft"/>
   <experimental value="true"/>
   <kind value="resource"/>
@@ -28,6 +29,8 @@
       <sliceName value="sliceCPFRNDS"/>
       <min value="1"/>
       <max value="1"/>
+      <short value="CPF do Paciente"/>
+      <definition value="CPF do Paciente"/>
     </element>
     <element id="Patient.identifier:sliceCPFRNDS.use">
       <path value="Patient.identifier.use"/>
@@ -42,10 +45,15 @@
     <element id="Patient.identifier:sliceCPFRNDS.value">
       <path value="Patient.identifier.value"/>
       <min value="1"/>
+      <max value="1"/>
+      <short value="CPF do paciente"/>
+      <definition value="CPF do paciente"/>
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
       <min value="1"/>
+      <short value="Nome completo do Paciente"/>
+      <definition value="Nome completo do Paciente"/>
     </element>
     <element id="Patient.name.text">
       <path value="Patient.name.text"/>
@@ -55,6 +63,8 @@
       <path value="Patient.birthDate"/>
       <min value="1"/>
       <max value="1"/>
+      <short value="Data de nascimento do Paciente"/>
+      <definition value="Data de nascimento do Paciente"/>
     </element>
   </differential>
 </StructureDefinition>

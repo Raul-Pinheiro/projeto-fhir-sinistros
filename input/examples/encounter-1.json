@@ -3,7 +3,7 @@
   "id": "encounter-1",
   "meta": {
     "profile": [
-      "http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter"
+      "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter"
     ]
   },
   "identifier": [
@@ -22,6 +22,6 @@
     "reference": "Patient/patient-1"
   },
   "period": {
-    "start":"2021-12-20"
+    "start":"2021-12-20T23:00:00.000Z"
   }
 }

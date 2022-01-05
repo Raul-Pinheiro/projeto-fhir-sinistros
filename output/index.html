@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>EXAMPLE.FHIR.UV.MYIG\MyIG Home Page - FHIR v4.0.1</title>
+    <title>EXAMPLE.FHIR.UV.SINISTROS\Sinistros Home Page - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,7 +47,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Your User Friendly Name for MyIG Here</span><br/>0.2.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Sinistros</span><br/>0.2.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -107,7 +107,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>MyIG Home Page</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Sinistros Home Page</b></li>
 
           <span style="float:right;">
 
@@ -137,15 +137,18 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Your User Friendly Name for MyIG Here - Local Development build (v0.2.0). See the <a href="http://somewhere.org/fhir/uv/myig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>MyIG Home Page</h2>
+  <!--ReleaseHeader--><p id="publish-box">Sinistros - Local Development build (v0.2.0). See the <a href="http://somewhere.org/fhir/uv/sinistros/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Sinistros Home Page</h2>
   
   <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#intro">Introduction</a></li><li><a href="#technical">Technical Overview</a></li></ul></div>
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   <a name="intro">  </a>
   <h3>Introduction</h3>
 	<p>
-    What is this IG about (in patient/non-expert friendly terms).
+  Os prestadores de serviços médicos geram dados de sinistros (eventos de saúde cobertos) para operadoras. Estes dados são usados para gestão de custos, criação de modelos preditivos e ações preventivas de saúde. Entretanto, a grande disparidade entre os dados trocados, a depender de quem envia e de quem recebe, gera complicações na preditibilidade e gestão dessas informações. Tendo isso em vista, em um escopo local, o guia de implementação FHIR possibilitará uma troca de informações confiável e efetiva entre as entidades, que é, de forma geral, o objetivo principal a ser atingido quando se está a interoperar.
+  </p>
+	<p>
+  Dessa forma, almeja-se criar uma forma simples e acessível de transmitir ou receber os registros gerados durante a prestação de serviços médicos, que poderão ser usados, futuramente, como pilar para análises mais complexas em nível nacional.
   </p>
 	<a name="technical">  </a>
 	<h3>Technical Overview</h3>
@@ -211,7 +214,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">HL7 International - [Some] Work Group</a>.  Package example.fhir.uv.myig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 20, 2021 21:45-0300">2021-12-20</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">HL7 International - [Some] Work Group</a>.  Package example.fhir.uv.sinistros#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 12, 2022 22:14+0000">2022-01-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

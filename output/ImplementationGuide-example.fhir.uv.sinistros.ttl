@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig> a fhir:ImplementationGuide;
+<http://somewhere.org/fhir/uv/sinistros/ImplementationGuide/example.fhir.uv.sinistros> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example.fhir.uv.myig"];
+  fhir:Resource.id [ fhir:value "example.fhir.uv.sinistros"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>YourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what MyIG is about (probably the same text as in your readme)</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>YourComputableSinistrosNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/sinistros/ImplementationGuide/example.fhir.uv.sinistros</pre><div><p>A brief description of what Sinistros is about (probably the same text as in your readme)</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"];
+  fhir:ImplementationGuide.url [ fhir:value "http://somewhere.org/fhir/uv/sinistros/ImplementationGuide/example.fhir.uv.sinistros"];
   fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
-  fhir:ImplementationGuide.name [ fhir:value "YourComputableMyIGNameHere"];
-  fhir:ImplementationGuide.title [ fhir:value "Your User Friendly Name for MyIG Here"];
+  fhir:ImplementationGuide.name [ fhir:value "YourComputableSinistrosNameHere"];
+  fhir:ImplementationGuide.title [ fhir:value "Sinistros"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-12-20T21:45:52-03:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-12T22:14:31+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 International - [Some] Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "A brief description of what MyIG is about (probably the same text as in your readme)"];
+  fhir:ImplementationGuide.description [ fhir:value "A brief description of what Sinistros is about (probably the same text as in your readme)"];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -37,7 +37,7 @@
        fhir:Coding.code [ fhir:value "001" ]
      ]
   ];
-  fhir:ImplementationGuide.packageId [ fhir:value "example.fhir.uv.myig"];
+  fhir:ImplementationGuide.packageId [ fhir:value "example.fhir.uv.sinistros"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -209,7 +209,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://somewhere.org/fhir/uv/myig/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://somewhere.org/fhir/uv/sinistros/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -341,13 +341,13 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/Patient/patient-1>;
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Patient/patient-1>;
          fhir:Reference.reference [ fhir:value "Patient/patient-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - patient-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/patient";
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/patient>
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient>
        ]
      ], [
        fhir:index 1;
@@ -357,13 +357,13 @@
          fhir:Extension.valueString [ fhir:value "Claim" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/Claim/claim-1>;
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Claim/claim-1>;
          fhir:Reference.reference [ fhir:value "Claim/claim-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Claim - claim-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/claim";
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/claim>
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim>
        ]
      ], [
        fhir:index 2;
@@ -373,90 +373,94 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/Organization/organization-2>;
-         fhir:Reference.reference [ fhir:value "Organization/organization-2" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Organization/organization-3>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-3" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - organization-2" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - organization-3" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/organization";
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/organization>
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization>
        ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+         fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/Practitioner/practitioner-1>;
-         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Organization/organization-2>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Practitioner - practitioner-1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - organization-2" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner";
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner>
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization>
        ]
      ], [
        fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Encounter" ]
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/Encounter/encounter-1>;
-         fhir:Reference.reference [ fhir:value "Encounter/encounter-1" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Practitioner/practitioner-1>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Encounter - encounter-1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Practitioner - practitioner-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter";
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter>
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner>
        ]
      ], [
        fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Coverage" ]
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/Coverage/coverage-1>;
-         fhir:Reference.reference [ fhir:value "Coverage/coverage-1" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Encounter/encounter-1>;
+         fhir:Reference.reference [ fhir:value "Encounter/encounter-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Coverage - coverage-1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Encounter - encounter-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage";
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage>
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter>
        ]
      ], [
        fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/Organization/organization-1>;
-         fhir:Reference.reference [ fhir:value "Organization/organization-1" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Coverage/coverage-1>;
+         fhir:Reference.reference [ fhir:value "Coverage/coverage-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - organization-1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Coverage - coverage-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://somewhere.org/fhir/uv/myig/StructureDefinition/organization";
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/organization>
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage>
        ]
      ], [
        fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+         fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/encounter>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/encounter" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/Organization/organization-1>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - organization-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization";
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization>
+       ]
      ], [
        fhir:index 8;
        fhir:Element.extension [
@@ -465,10 +469,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/patient>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/patient" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/encounter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Atendimento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Atendimento/Consulta" ]
      ], [
        fhir:index 9;
        fhir:Element.extension [
@@ -477,10 +482,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/coverage" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Paciente" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paciente, também conhecido como cadastro vidas, beneficiários e segurados" ]
      ], [
        fhir:index 10;
        fhir:Element.extension [
@@ -489,22 +495,24 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/organization>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/organization" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/coverage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/coverage" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cobertura" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cobertura" ]
      ], [
        fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/claim>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/claim" ]
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim-senha>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/claim-senha" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Claim" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Senha/Token" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Autorização senha/token de um sinistro" ]
      ], [
        fhir:index 12;
        fhir:Element.extension [
@@ -513,10 +521,37 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://somewhere.org/fhir/uv/myig/StructureDefinition/practitioner>;
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organização" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organização, como hospital, prestador de saúde ou empresa" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/claim" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sinistros" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sinistros/Eventos de pacientes" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/practitioner" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profissional de Saúde" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profissional de Saúde" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -525,7 +560,7 @@
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "MyIG Home Page" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Sinistros Home Page" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 1;
@@ -609,7 +644,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig.ttl> a owl:Ontology;
+<http://somewhere.org/fhir/uv/sinistros/ImplementationGuide/example.fhir.uv.sinistros.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

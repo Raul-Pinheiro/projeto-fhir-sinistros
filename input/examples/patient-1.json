@@ -3,7 +3,7 @@
   "id": "patient-1",
   "meta": {
     "profile": [
-      "http://somewhere.org/fhir/uv/myig/StructureDefinition/patient"
+      "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/patient"
     ]
   },
   "identifier": [
