@@ -222,8 +222,8 @@
         <description value="Allowable service and product codes."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/service-uscls"/>
       </binding>
-      <short value="Produtos e/ou Serviços aplicados"/>
-      <definition value="Produtos e/ou Serviços aplicados"/>
+      <short value="Produtos e/ou Serviços usados"/>
+      <definition value="Produtos e/ou Serviços usados"/>
     </element>
     <element id="Claim.item.servicedPeriod">
       <path value="Claim.item.servicedPeriod"/>

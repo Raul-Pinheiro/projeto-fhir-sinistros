@@ -3,7 +3,7 @@
 
 err = 0, warn = 14, info = 19
 IG Publisher Version: 1.1.94
-Generated Wed Jan 12 22:14:53 GMT 2022. FHIR version 4.0.1 for example.fhir.uv.sinistros#0.2.0 (canonical = http://somewhere.org/fhir/uv/sinistros)
+Generated Wed Jan 12 23:00:27 GMT 2022. FHIR version 4.0.1 for example.fhir.uv.sinistros#0.2.0 (canonical = http://somewhere.org/fhir/uv/sinistros)
  Build Errors : 0 / 8 / 0
  /app/dev/input/examples/claim-1 : 0 / 3 / 4
  /app/dev/input/examples/coverage-1 : 0 / 0 / 1
