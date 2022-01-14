@@ -19,7 +19,7 @@
   },
   "payor": [
     {
-      "reference": "Patient/patient-1"
+      "reference": "Organization/organization-1"
     }
   ]
 }

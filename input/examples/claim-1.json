@@ -45,10 +45,6 @@
     {
       "sequence": 1,
       "focal": true,
-      "identifier": {
-        "system": "http://somewhere.org/fhir/uv/sinistros/StructureDefinition/claim",
-        "value": "12345"
-      },
       "coverage": {
         "reference": "Coverage/coverage-1"
       }

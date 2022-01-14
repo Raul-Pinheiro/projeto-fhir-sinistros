@@ -17,13 +17,29 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"practitioner-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-practitioner.html\">Profissional de Saúde</a></p></div><p><b>identifier</b>: id: 3333333333 (OFFICIAL)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"practitioner-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-practitioner.html\">Profissional de Saúde</a></p></div><p><b>identifier</b>: id: 3333333333 (OFFICIAL)</p><p><b>name</b>: Medicino Medicante(OFFICIAL)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Médico generalista <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (BRCBO#225170)</span></td></tr></table></div>"
   ];
   fhir:Practitioner.identifier [
      fhir:index 0;
      fhir:Identifier.use [ fhir:value "official" ];
      fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/cpf" ];
      fhir:Identifier.value [ fhir:value "3333333333" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.text [ fhir:value "Medicino Medicante" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://rnds.saude.gov.br/fhir/r4/CodeSystem/BRCBO" ];
+         fhir:Coding.code [ fhir:value "225170" ];
+         fhir:Coding.display [ fhir:value "Médico generalista" ]
+       ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------

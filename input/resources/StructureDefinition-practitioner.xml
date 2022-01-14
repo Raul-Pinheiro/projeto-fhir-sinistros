@@ -26,5 +26,28 @@
       <short value="ID do profissional"/>
       <definition value="ID do profissional"/>
     </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name"/>
+      <min value="1"/>
+      <short value="Nome completo do profissional de saúde"/>
+      <definition value="Nome completo do profissional de saúde"/>
+    </element>
+    <element id="Practitioner.name.text">
+      <path value="Practitioner.name.text"/>
+      <min value="1"/>
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ICD10"/>
+        </extension>
+        <strength value="example"/>
+        <description value="CBOs"/>
+        <valueSet value="https://rnds.saude.gov.br/fhir/r4/CodeSystem/BRCBO"/>
+      </binding>
+      <short value="Especialidade do profissional de saúde"/>
+      <definition value="Especialidade do profissional de saúde"/>
+    </element>
   </differential>
 </StructureDefinition>

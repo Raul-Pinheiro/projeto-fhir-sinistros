@@ -84,8 +84,8 @@
     </element>
     <element id="Claim.patient">
       <path value="Claim.patient"/>
-      <short value="Referência o paciente do sinistro"/>
-      <definition value="Referência o paciente do sinistro"/>
+      <short value="Referência ao paciente do sinistro"/>
+      <definition value="Referência ao paciente do sinistro"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -97,6 +97,15 @@
       <path value="Claim.created"/>
       <short value="Data de cadastro do sinistro"/>
       <definition value="Data de cadastro do sinistro"/>
+    </element>
+    <element id="Claim.provider">
+      <path value="Claim.provider"/>
+      <short value="Referência ao(s) profissional(is) de saúde"/>
+      <definition value="Referência ao(s) profissional(is) de saúde"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
     </element>
     <element id="Claim.priority">
       <path value="Claim.priority"/>
@@ -173,6 +182,36 @@
       <short value="Código TUSS"/>
       <definition value="Código TUSS"/>
     </element>
+    <element id="Claim.insurance">
+      <path value="Claim.insurance"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Claim.insurance.sequence">
+      <path value="Claim.insurance.sequence"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+    </element>
+    <element id="Claim.insurance.focal">
+      <path value="Claim.insurance.focal"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Claim.insurance.coverage">
+      <path value="Claim.insurance.coverage"/>
+      <short value="Referência a cobertura"/>
+      <definition value="Referência a cobertura"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Coverage"/>
+      </type>
+    </element>
     <element id="Claim.item">
       <path value="Claim.item"/>
       <min value="1"/>
@@ -219,7 +258,6 @@
           <valueString value="ServiceProduct"/>
         </extension>
         <strength value="example"/>
-        <description value="Allowable service and product codes."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/service-uscls"/>
       </binding>
       <short value="Produtos e/ou Serviços usados"/>

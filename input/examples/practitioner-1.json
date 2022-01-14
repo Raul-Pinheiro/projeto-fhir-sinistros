@@ -11,7 +11,7 @@
       "use": "official",
       "system": "http://www.saude.gov.br/fhir/r4/NamingSystem/cpf",
       "value": "3333333333"
-    },
+    }
   ],
   "name": [
     {

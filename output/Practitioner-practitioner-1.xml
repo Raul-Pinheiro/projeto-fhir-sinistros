@@ -6,11 +6,24 @@
     <profile value="http://somewhere.org/fhir/uv/sinistros/StructureDefinition/practitioner"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "practitioner-1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-practitioner.html">Profissional de Saúde</a></p></div><p><b>identifier</b>: id: 3333333333 (OFFICIAL)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "practitioner-1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-practitioner.html">Profissional de Saúde</a></p></div><p><b>identifier</b>: id: 3333333333 (OFFICIAL)</p><p><b>name</b>: Medicino Medicante(OFFICIAL)</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Médico generalista <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (BRCBO#225170)</span></td></tr></table></div>
   </text>
   <identifier>
     <use value="official"/>
     <system value="http://www.saude.gov.br/fhir/r4/NamingSystem/cpf"/>
     <value value="3333333333"/>
   </identifier>
+  <name>
+    <use value="official"/>
+    <text value="Medicino Medicante"/>
+  </name>
+  <qualification>
+    <code>
+      <coding>
+        <system value="https://rnds.saude.gov.br/fhir/r4/CodeSystem/BRCBO"/>
+        <code value="225170"/>
+        <display value="Médico generalista"/>
+      </coding>
+    </code>
+  </qualification>
 </Practitioner>

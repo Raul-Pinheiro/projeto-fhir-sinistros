@@ -26,5 +26,35 @@
       <short value="ID da cobertura"/>
       <definition value="ID do cobertura"/>
     </element>
+    <element id="Coverage.status">
+      <path value="Coverage.status"/>
+      <short value="Status da cobertura"/>
+      <definition value="Status da cobertura"/>
+      <patternCode value="active"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Coverage.beneficiary">
+      <path value="Coverage.beneficiary"/>
+      <short value="Referência ao paciente"/>
+      <definition value="Referência ao paciente"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="Coverage.payor">
+      <path value="Coverage.payor"/>
+      <short value="Referência a organização pagante, usualmente a empresa onde o paciente trabalha"/>
+      <definition value="Referência a organização pagante, usualmente a empresa onde o paciente trabalha"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

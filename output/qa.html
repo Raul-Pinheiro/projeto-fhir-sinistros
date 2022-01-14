@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 14, info = 19 -->
+<!-- broken links = 0, errors = 0, warn = 15, info = 20 -->
 <head>
   <title>YourComputableSinistrosNameHere : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for YourComputableSinistrosNameHere</h1>
- <p>Generated Wed Jan 12 23:00:27 GMT 2022, FHIR version 4.0.1 for example.fhir.uv.sinistros#0.2.0 (canonical = <a href="http://somewhere.org/fhir/uv/sinistros">http://somewhere.org/fhir/uv/sinistros</a> (<a href="http://somewhere.org/fhir/uv/sinistros/history.html">history</a>)). See <a href="/app/dev/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Jan 14 02:11:50 GMT 2022, FHIR version 4.0.1 for example.fhir.uv.sinistros#0.2.0 (canonical = <a href="http://somewhere.org/fhir/uv/sinistros">http://somewhere.org/fhir/uv/sinistros</a> (<a href="http://somewhere.org/fhir/uv/sinistros/history.html">history</a>)). See <a href="/app/dev/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.94</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = example.fhir.uv.sinistros, Canonical = http://somewhere.org/fhir/uv/sinistros</td></tr>
@@ -50,8 +50,8 @@
  <br/><br/>The copyrightYear parameter ('2019+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://somewhere.org/fhir/uv/sinistros (Problem #1 with package-list.json at http://somewhere.org/fhir/uv/sinistros: http://somewhere.org/fhir/uv/sinistros/package-list.json?nocache=1642028365832)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 14, info = 19</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://somewhere.org/fhir/uv/sinistros (Problem #1 with package-list.json at http://somewhere.org/fhir/uv/sinistros: http://somewhere.org/fhir/uv/sinistros/package-list.json?nocache=1642126277517)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 15, info = 20</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -82,7 +82,7 @@
      <td><a href="#_app_dev_input_examples_patient-1"><b>/app/dev/input/examples/patient-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_app_dev_input_examples_practitioner-1"><b>/app/dev/input/examples/practitioner-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_app_dev_input_examples_practitioner-1"><b>/app/dev/input/examples/practitioner-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_app_dev_input_resources_StructureDefinition-claim"><b>/app/dev/input/resources/StructureDefinition-claim</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
@@ -103,7 +103,7 @@
      <td><a href="#_app_dev_input_resources_StructureDefinition-patient"><b>/app/dev/input/resources/StructureDefinition-patient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_app_dev_input_resources_StructureDefinition-practitioner"><b>/app/dev/input/resources/StructureDefinition-practitioner</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+     <td><a href="#_app_dev_input_resources_StructureDefinition-practitioner"><b>/app/dev/input/resources/StructureDefinition-practitioner</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_app_dev_input_sinistros"><b>/app/dev/input/sinistros</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -155,16 +155,16 @@
      <td><b>Claim.priority.coding[0] (l33/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Claim.procedure[0].procedure.ofType(CodeableConcept) (l74/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS not found by validator</b></td>
+     <td><b>Claim.procedure[0].procedure.ofType(CodeableConcept) (l70/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Claim.procedure[0].procedure.ofType(CodeableConcept).coding[0] (l75/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS' is unknown so the code cannot be validated</b></td>
+     <td><b>Claim.procedure[0].procedure.ofType(CodeableConcept).coding[0] (l71/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Claim.item[0].unitPrice.currency (l118/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_15"><b>The value provided ('BRL') could not be validated in the absence of a terminology server</b></td>
+     <td><b>Claim.item[0].unitPrice.currency (l114/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_15"><b>The value provided ('BRL') could not be validated in the absence of a terminology server</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Claim.item[0].net.currency (l122/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_15"><b>The value provided ('BRL') could not be validated in the absence of a terminology server</b></td>
+     <td><b>Claim.item[0].net.currency (l118/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_15"><b>The value provided ('BRL') could not be validated in the absence of a terminology server</b></td>
    </tr>
 </table>
 <hr/>
@@ -234,7 +234,10 @@
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].code.coding[0] (l26/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://rnds.saude.gov.br/fhir/r4/CodeSystem/BRCBO' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -253,7 +256,7 @@
      <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[17].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS on element Claim.procedure.procedureCodeableConcept could not be resolved</b></td>
+     <td><b>StructureDefinition.differential.element[18].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS on element Claim.procedure.procedureCodeableConcept could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.snapshot.element[82].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS on element Claim.procedure.procedure[x] could not be resolved</b></td>
@@ -356,6 +359,9 @@
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[4].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://rnds.saude.gov.br/fhir/r4/CodeSystem/BRCBO on element Practitioner.qualification could not be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -469,6 +475,9 @@
  <table class="grid">
    <tr style="background-color: #fffff2">
      <td><a href="Claim-claim-1.html">input/examples/claim-1.json</a></td><td><b>Code System URI 'http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Practitioner-practitioner-1.html">input/examples/practitioner-1.json</a></td><td><b>Code System URI 'https://rnds.saude.gov.br/fhir/r4/CodeSystem/BRCBO' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-claim.html">input/resources/StructureDefinition-claim.xml</a></td><td><b>Code System URI 'http://unstats.un.org/unsd/methods/m49/m49.htm' is unknown so the code cannot be validated</b></td>
